@@ -7,16 +7,20 @@
 </head>
 <?php
 if(isset($_GET['gagzavna'])){
-    $xelfasi = $_GET['salary'];
-    echo $xelfasi - ($xelfasi * 0.2);
+    $salary = $_GET['xelfasi'];
+    echo $salary - ($salary * 0.2);
 }
 ?>
 <body>
     <form method="get"">
-        <input type="text" name="name">
-        <input type="text" name="lastname">
-        <input type="text" name="pozicia">
-        <input type="number" name="xelfasi">
+        name<input type="text" name="name">
+        <br><br>
+       lastname <input type="text" name="lastname">
+        <br><br>
+        pozicia<input type="text" name="pozicia">
+        <br><br>
+       xelfasi <input type="number" name="xelfasi">
+        <br><br>
         <button type="submit" name="gagzavna">gagzavna</button>
     </form>
     
